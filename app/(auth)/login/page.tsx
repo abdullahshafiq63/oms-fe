@@ -1,5 +1,4 @@
 import { Card } from "antd";
-import { authenticate } from '@/app/lib/actions'
 
 const Login = () => {
   return (
