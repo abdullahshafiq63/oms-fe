@@ -1,7 +1,5 @@
-
+"use client";
 import SubNotifications from "./subnotifications";
-
-
 
 const Notification = () => {
   return (

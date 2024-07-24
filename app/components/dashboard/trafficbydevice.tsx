@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 // Define the types for props and devices

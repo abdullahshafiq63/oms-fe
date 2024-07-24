@@ -1,3 +1,5 @@
+"use client";
+
 import SubActivities from "./subactivities";
 
 const Activities = () => {

@@ -93,7 +93,7 @@ const App: React.FC = () => {
           </div>
           <div className="flex flex-col gap-7 mt-7">
             <div className="flex h-80 gap-7">
-               <UserStats />
+               {/* <UserStats /> */}
 
                <TrafficByWebsite />
 

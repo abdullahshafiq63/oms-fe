@@ -1,5 +1,5 @@
+"use client";
 import SubContacts from "./subcontacts";
-
 
 const Contacts = () => {
   return (
