@@ -39,7 +39,7 @@ const TrafficByLocation: React.FC = () => {
       Traffic by Location
       <div className="flex justify-between">
         <div className="pt-4 sh-full">
-          <div className="flex flex-col gap-[10px]" style={{ width: 250 }}>
+          <div className="flex flex-col gap-2.5 w-60">
             {progressItems.map((item, index) => (
               <Progress
                 key={index}

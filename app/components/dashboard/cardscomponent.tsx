@@ -1,7 +1,7 @@
 "use client";
+
 import Image from "next/image";
 import React from "react";
-import { Card } from "antd";
 
 interface CardsComponentProps {
   backgroundColor: string;
@@ -18,51 +18,24 @@ const CardsComponent: React.FC<CardsComponentProps> = ({
   percent,
   icon,
 }) => {
-  const cardStyle = {
-    width: 275,
-    height: 150,
-    padding: 24,
-    radius: 16,
-    backgroundColor: backgroundColor,
-  };
-
-  const veiwStyle = {
-    fontWeight: 600,
-  };
-
   return (
-    <div className="cards-container flex">
-      <Card className="flex gap-y-7" style={cardStyle}>
+    <div className="cards-container h-40 rounded-2xl flex w-1/4" style={{ backgroundColor }}>
+      <div 
+        className=" p-6  flex flex-col bg-{'{backgroundColor}'}"
+      >
         <p>{title}</p>
-        <div className="gap-4"
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginTop: 20,
-          }}
-        >
-          <p 
-            style={{
-              fontSize: 24,
-              fontWeight: 600,
-            }}
-          >
+        <div className="flex justify-between items-center mt-12 gap-4">
+          <p className="text-2xl font-semibold">
             {amount}
           </p>
-          <p 
-            style={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
+          <p className="flex items-center">
             {percent}
             <span className="pl-2">
               <Image src="/ArrowRise.png" alt="ArrowRise" width={24} height={24} />
             </span>
           </p>
         </div>
-      </Card>
+      </div>
     </div>
   );
 };

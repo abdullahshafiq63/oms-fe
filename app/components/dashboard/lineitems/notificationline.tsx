@@ -1,10 +1,11 @@
 "use client";
+
 import SubNotifications from "./subnotifications";
 
 const Notification = () => {
   return (
     <div className="w-full  ">
-      <p className="w-full h-[20px] font-sans text-[14px] font-normal leading-[20px] text-left">
+      <p className="w-full h-5 font-sans text-base font-normal leading-5 text-left">
         Notifications
       </p>
       <SubNotifications icon="/IconSet11.png" notification={'You fixed a bug.'} time={'Just now'} /> 

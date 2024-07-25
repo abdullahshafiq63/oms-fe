@@ -19,7 +19,8 @@ const cardData: CardData[] = [
 
 const CardList: React.FC = () => {
   return (
-    <div className="flex gap-11 mt-7">
+    <div className="flex gap-7 mt-6 w-full">
+
       {cardData.map((card, index) => (
         <CardsComponent
           key={index}

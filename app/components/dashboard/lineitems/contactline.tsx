@@ -1,10 +1,11 @@
 "use client";
+
 import SubContacts from "./subcontacts";
 
 const Contacts = () => {
   return (
-    <div className="w-full  gap-[4px] mt-10" >
-      <p className="w-full h-[20px] font-sans text-[14px] font-normal leading-[20px] text-left">
+    <div className="w-full gap-1 mt-5" >
+      <p className="w-full h-5 font-sans text-base font-normal leading-5 text-left">
       Contacts
       </p>
       <SubContacts className="mt-4" icon="/female1.png" notification={'Andy lane'} /> 

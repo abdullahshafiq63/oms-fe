@@ -55,33 +55,16 @@ const App: React.FC = () => {
   return (
     <Layout className="h-screen">
       <Sider>
-        {/* do not use style */}
-        <div
-          className="demo-logo-vertical"
-          style={{
-            padding: 0,
-            background: "#fff",
-            width: "100%",
-            borderBottom: 1,
-          }}
-        />
+        <div className="demo-logo-vertical p-0 bg-white w-full border-b border-gray-200"/>
         <Profile />
       </Sider>
       <Layout>
-        {/* can we omit this */}
         <Header className="border-b border-black-10 bg-white w-full">
           <NavBar />
         </Header>
-        <Content
-          style={{
-            padding: 24,
-            minHeight: 280,
-            background: colorBgContainer,
-            borderRadius: borderRadiusLG,
-          }}
-        >
+        <Content className="p-6 h-72 bg-customBgContainer bg-white rounded-customRadius">
           <div className="flex items-start relative">
-            <div className="p-[4px] font-inter text-[14px] font-semibold leading-[20px] text-left">
+            <div className="p-1 font-inter text-xs font-semibold leading-5 text-left">
               Overview
             </div>
             <div className="pt-1 ml-auto">
@@ -93,10 +76,8 @@ const App: React.FC = () => {
           </div>
           <div className="flex flex-col gap-7 mt-7">
             <div className="flex h-80 gap-7">
-               {/* <UserStats /> */}
-
+               <UserStats />
                <TrafficByWebsite />
-
             </div>
             <div className="flex h-64 gap-7">
               <TrafficByDevice devices={devices} />
@@ -105,12 +86,9 @@ const App: React.FC = () => {
           </div>
         </Content>
       </Layout>
-      <Sider
-        trigger={null}
-        style={{ backgroundColor: "#fff", overflow: "hidden" }}
-      >
+      <Sider className="bg-white overflow-hidden">
         <div className="demo-logo-vertical" />
-        <div className="w-54 pl-4 pt-4 border-l border-black-10 bg-white">
+        <div className="w-54 min-h-screen pl-4 pt-4 border-l border-black-10 bg-white">
           <Notification />
           <Activities />
           <Contacts />

@@ -4,9 +4,8 @@ const Register = () => {
   return <div className="flex items-center justify-center min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
   <Card
     title="Create your account"
-    className="mt-6 text-center text-3xl text-gray-900"
+    className="mt-6 text-center text-3xl text-gray-900 w-25 h-auto"
     bordered={false}
-    style={{ width: 400, height: 'auto' }}
   >
     <form className="space-y-6">
       <input type="hidden" name="remember" value="true" />

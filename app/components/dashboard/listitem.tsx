@@ -6,9 +6,9 @@ import { Menu } from 'antd';
 const MainMenu = () => {
   return (
     <Menu
+      className="flex justify-center"
       mode="horizontal"
       theme="light"
-      style={{ display: 'flex', justifyContent: 'center' }}
       items={[
         { key: '1', label: 'Home' },
         { key: '2', label: 'Dashboard' },

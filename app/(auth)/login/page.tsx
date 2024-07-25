@@ -5,9 +5,8 @@ const Login = () => {
     <div>
       <Card
         title="Log in to your account"
-        className="text-center text-3xl  text-gray-900"
+        className="text-center text-3xl  text-gray-900 w-96 h-auto"
         bordered={false}
-        style={{ width: 400, height: 'auto' }}
       >
         <form className="space-y-4">
           <input type="hidden" name="remember" value="true" />
