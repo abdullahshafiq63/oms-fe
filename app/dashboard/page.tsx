@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { redirect } from 'next/navigation'
 import { Layout, theme } from "antd";
 
 import Profile from "../components/dashboard/sidebar/profile";
@@ -17,6 +18,11 @@ import TrafficByLocation from "../components/dashboard/trafficbylocation";
 const { Header, Sider, Content } = Layout;
 
 const App: React.FC = () => {
+  const user = localStorage.getItem('user');
+  if (!user) {
+    redirect('/authentication/login')
+  }
+
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
